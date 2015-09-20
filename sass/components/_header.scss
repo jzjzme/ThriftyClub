@@ -2,40 +2,47 @@
 
 .header {
   	border-bottom: 1px solid #f1f1f1;
-  	min-height: 80px;
+  	height: 80px;
+    position: absolute;
+    top: 0;
+	left: 0;
+    right: 0;
 
 	.logo {
 		float: left;
 		font-size: 18px;
-		line-height: 80px;
-		margin: 0 20px 0 0;
+		margin: 3px 20px 0 0;
 		text-align: center;
 
-		a {
-			text-decoration: none;
-			letter-spacing: 0.3px;
+		img {
+		  max-height: 75px;
+		  display: block;
 		}
 	}
 }
 
 .nav-menu {
-	float: left;
+	float: right;
 
 	&__item {
 		display: inline-block;
 	  	vertical-align: middle;
-	  line-height: 80px;
-	  color: #333333;
-	  text-decoration: none;
-	  font-size: 16px;
-	  margin-right: 15px;
+	  	line-height: 80px;
+	  	color: #333333;
+	  	text-decoration: none;
+	  	font-size: 16px;
+	  	margin-right: 15px;
+
+	  	&:hover {
+			color: #3E6A74;
+	  	}
 
 	  	&--rounded {
-		  border-radius: 17px;
-		  border: 2px solid #3E6A74;
-		  line-height: 20px;
-		  padding: 5px 15px;
-		  margin: 2px 0 0 0;
+		  	border-radius: 17px;
+		  	border: 2px solid #3E6A74;
+		  	line-height: 20px;
+		  	padding: 5px 15px;
+		  	margin: 2px 0 0 0;
 	  	}
 	}
 }
