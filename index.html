@@ -10,12 +10,7 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script> 
-    function overlay() {
-    el = document.getElementById("overlay");
-    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-    }
-    </script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -38,8 +33,37 @@
             
 	<section class="dashboard">
         <div class="container">
-            <aside class="reward-bar">
-                <h3>Reward <br/> <span>$100</span></h3>
+        <!--Start of Modal -->
+<div class="modal">
+    <input id="modal__trigger" type="checkbox" />
+
+    <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
+        <div class="modal__wrap">
+            <label for="modal__trigger">&#10006;</label>
+            <h2 id="modal__title">This is your modal content</h2>
+            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+        </div>
+    </div>
+</div>
+<!--End of Modal -->
+
+        <!--Start of Modal -->
+<div class="modal2">
+    <input id="modal2__trigger" type="checkbox" />
+
+    <div class="modal2__overlay" role="dialog" aria-labelledby="modal2__title" aria-describedby="modal2_desc">
+        <div class="modal2__wrap">
+            <label for="modal2__trigger">&#10006;</label>
+            <h2 id="modal2__title">This is your modal content 2</h2>
+            <p id="modal2__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
+        </div>
+    </div>
+</div>
+<!--End of Modal -->
+
+ <label for="modal__trigger">
+        <aside class="reward-bar">
+                <h3>Food <br/> <span>$100</span></h3>
                 <div class="progress-bar">
                     <div class="progress-bar__vertical">
                         <div class="progress-bar__inner" style="height: 70%;"></div>
@@ -48,6 +72,19 @@
                 </div>
                 <h3>Start</h3>
             </aside>
+            </label>
+             <label for="modal__trigger">
+            <aside class="reward-bar">
+                <h3>Clothing <br/> <span>$100</span></h3>
+                <div class="progress-bar">
+                    <div class="progress-bar__vertical">
+                        <div class="progress-bar__inner" style="height: 70%;"></div>
+                    </div>
+                    <span class="progress-bar__value" style="bottom: 70%">$70</span>
+                </div>
+                <h3>Start</h3>
+            </aside>
+            </label>
 
             <div class="widget-container">
                 <div class="widget widget__2y" align="center">
@@ -125,7 +162,7 @@
                 <div class="widget widget__1" align="center">
                      <h4>Featured Thrift of the Day</h4>
                      <img src="images/walmart.jpg" align="center">
-                     <button> View</button>
+
                 </div>
                 <div class="widget widget__1" align="center">
                     <h4>Friend's Challenge</h4>
@@ -146,6 +183,6 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/bpopup.min.js"></script>
-	<!--<script type="text/javascript" src="js/scripts.js"></script>-->
+	
 </body>
 </html>
