@@ -33,15 +33,15 @@ $(function(){
 		var until_reward = DB.total_spending/100 % increments;
 		until_reward = until_reward === 0 ? 100 : until_reward;
 
-		$(".cloth-bar .progress-bar__inner").css("height", until_reward + "%");
-		$(".cloth-bar .progress-bar__value").css("bottom", until_reward + "%").html(until_reward + "%");
+		$(".progress-bar__inner").css("height", until_reward + "%");
+		$(".progress-bar__value").css("bottom", until_reward + "%").html(until_reward + "%");
 	}
 	function distanceToFoodReward(DB) {
 		var until_reward = DB.total_spending/100 % increments;
 		until_reward = until_reward === 0 ? 100 : until_reward;
 
-		$(".food-bar .progress-bar__inner").css("height", until_reward + "%");
-		$(".food-bar .progress-bar__value").css("bottom", until_reward + "%").html(until_reward + "%");
+		$(".progress-bar__inner").css("height", until_reward + "%");
+		$(".progress-bar__value").css("bottom", until_reward + "%").html(until_reward + "%");
 	}
 
 	function checkRewards(DB) {
