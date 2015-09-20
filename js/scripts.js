@@ -88,11 +88,15 @@ $(function(){
 	function generateLeaderboards() {
 		var url = "http://45.55.4.47/ranked_list";
 		hit_API_json(url, function(d){
-			console.log($('#users-table tr:last'))
-			_.forEach(d.names, function(person) {
-				//$('#users-table tr:last').after('<tr><td><div class="user-logo"></div></td><td><div class="user-name">' + person.name + '</div></td><td><div class="user-start">$' + person.total_spending + '</div></td></tr>');
-				$('#users-table').append('<tr><td><div class="user-logo"></div></td><td><div class="user-name">' + person.name + '</div></td><td><div class="user-start">$' + person.total_spending + '</div></td></tr>');
-			})
+			console.log(d)
+			$('.user-name1').html(d.names[0].name)
+			$('.user-start1').html('$' + d.names[0].total_spending)
+
+			$('.user-name2').html(d.names[1].name)
+			$('.user-start2').html('$' + d.names[1].total_spending)
+
+			$('.user-name3').html(d.names[2].name)
+			$('.user-start3').html('$' + d.names[2].total_spending)
 		})
 	}
 	generateLeaderboards()
