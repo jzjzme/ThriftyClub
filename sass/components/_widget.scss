@@ -1,0 +1,46 @@
+.widget {
+  background-color: #ffffff;
+  border-radius: $widget-border-radius;
+  float: left;
+  position: relative;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+
+  &__1 {
+    width: 275px;
+    height: 275px;
+  }
+
+  &__2x {
+    width: 560px;
+    height: 275px;
+  }
+
+  &__2y {
+    width: 275px;
+    height: 560px;
+  }
+}
+
+.users-table {
+  width: 100%;
+
+  td {
+    vertical-align: middle;
+    padding: 5px;
+
+  }
+}
+
+.user-logo {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background-color: #38BFB3;
+  border: 1px solid #dddddd;
+}
+
+.user-name {
+
+}

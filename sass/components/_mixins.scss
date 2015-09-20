@@ -1,0 +1,18 @@
+@mixin clearfix(){
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin cuttedText(){
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin border-radius($value){
+  -webkit-border-radius: $value;
+  border-radius: $value;
+}

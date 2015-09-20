@@ -1,0 +1,47 @@
+//common (general styles)
+
+html, body {
+  height: 100%;
+}
+
+img {
+	max-width: 100%; }
+
+hr {
+	border-color: #ddd; }
+
+a, button, input, textarea, img {
+	outline: none !important; }
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	line-height: 1.3em;
+	font-weight: 400; }
+
+h1 {
+	font-size: 31px; }
+
+h2 {
+	font-size: 32px; }
+
+h3 {
+	font-size: 20px; }
+
+h4 {
+	font-size: 18px; }
+
+h5 {
+	font-size: 16px; }
+
+h6 {
+	font-size: 15px; }
+
+small {
+	font-size: 11px;
+}
+
+
+body {
+	color: $text-color;
+	font-size: 14px;
+}

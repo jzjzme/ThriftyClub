@@ -1,0 +1,32 @@
+
+.progress-bar {
+  position: relative;
+
+  &__vertical {
+    height: 400px;
+    width: 30px;
+    margin: 0 auto;
+    border-radius: $widget-border-radius;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    position: relative;
+  }
+
+  &__inner {
+    position: absolute;
+    background-color: #38BFB3;
+    bottom: 0;
+    right: 0;
+
+    .progress-bar__vertical & {
+      left: 0;
+    }
+  }
+
+  &__value {
+    position: absolute;
+    right: 50%;
+    margin-right: -42px;
+    margin-bottom: -8px;
+  }
+}

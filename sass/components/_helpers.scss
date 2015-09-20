@@ -1,0 +1,77 @@
+// ----- HELPERS -----
+
+._white-bg {
+	background-color: #ffffff;
+}
+
+._light-gray-bg {
+	background-color: #f7fafb;
+}
+
+._blue-bg {
+	background-color: #69b5f8;
+}
+
+._base-text-color {
+	color: $text-color; // #333
+}
+
+._xs-text {
+	font-size: 11px;
+}
+
+._lh-50 {
+	line-height: 50px;
+}
+
+._dark-text {
+	color: $text-color;
+}
+
+._pad-top-15 {
+	padding-top: 15px;
+}
+
+._pad-top-20 {
+	padding-top: 20px;
+}
+
+._pad-top-30 {
+	padding-top: 30px;
+}
+
+._pad-top-35 {
+	padding-top: 35px;
+}
+
+._pad-top-40 {
+	padding-top: 40px;
+}
+
+._m-top-25 {
+	margin-top: 25px;
+}
+
+._inline-block {
+	display: inline-block;
+}
+
+._svg {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 45px;
+	vertical-align: text-bottom;
+	margin-right: 10px;
+}
+
+.hiden-content {
+	display: none;
+}
+
+.showAll {
+	display: block;
+}
