@@ -90,13 +90,13 @@ $(function(){
 		hit_API_json(url, function(d){
 			console.log(d)
 			$('.user-name1').html(d.names[0].name)
-			$('.user-start1').html('$' + d.names[0].total_spending)
+			$('.user-start1').html('$' + d.names[0].total_spending / 100)
 
 			$('.user-name2').html(d.names[1].name)
-			$('.user-start2').html('$' + d.names[1].total_spending)
+			$('.user-start2').html('$' + d.names[1].total_spending / 100)
 
 			$('.user-name3').html(d.names[2].name)
-			$('.user-start3').html('$' + d.names[2].total_spending)
+			$('.user-start3').html('$' + d.names[2].total_spending / 100)
 		})
 	}
 	generateLeaderboards()
