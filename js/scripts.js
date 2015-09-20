@@ -26,6 +26,8 @@ $(function(){
 	var clothes_reward = [];
 	var increments = 41;
 
+	$('.value_total').html('$' + increments)
+
 
 	function distanceToClothesReward(DB) {
 		var until_reward = DB.total_spending/100 % increments;
@@ -44,7 +46,7 @@ $(function(){
 
 	function checkRewards(DB) {
 		if(DB.total_spending/100 % increments === 0){
-			var itemId = DB.current_reward_clothes;
+			var itemId = DB.current_reward_clothes || 'ED122I01T-113';
  			var url = "https://api.zalando.com/articles/" + itemId;
 			hit_API_json(url, function(clothes_reward){ 
 				console.log(clothes_reward)
