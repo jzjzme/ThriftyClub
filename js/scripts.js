@@ -101,6 +101,26 @@ $(function(){
 	}
 	generateLeaderboards()
 
+
+	function loadOtherRewards(DB) {
+		var itemId = DB.current_reward_clothes || 'ED122I01T-113';
+		var url = "https://api.zalando.com/articles/" + itemId;
+		hit_API_json(url, function(d){ 
+			var image_url = d.media.images[0].mediumUrl;
+			var buy_url = d.shopUrl
+			console.log(d)
+			$('#recommended_purchase').append("<a href=" + buy_url + "><img src=" + image_url + "></a>")
+		})
+
+		hit_API("http://api.walmartlabs.com/v1/vod?apiKey=" + API_KEY_WalMart, function(d){
+			console.log(d)
+			var image_url = d.thumbnailImage;
+			var buy_url = d.addToCartUrl;
+			console.log(buy_url)
+			$('.walmartImage').append("<a href=" + buy_url + "><img src=" + image_url + "></a>")
+		})
+	}
+
 	function loadSpecificUser(user) {
 		var url = "http://45.55.4.47/get_name/" + user;
 
@@ -113,6 +133,7 @@ $(function(){
 			distanceToFoodReward(d);
 			checkRewards(d)
 			historicPurchases(d)
+			loadOtherRewards(d)
 		})
 	}
 	loadSpecificUser("Jerry Smith")
