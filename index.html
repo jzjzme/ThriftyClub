@@ -10,6 +10,9 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
 </head>
 
 <body>
@@ -39,7 +42,9 @@
             <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
                 <div class="modal__wrap">
                     <label for="modal__trigger">&#10006;</label>
-                    <h2 id="modal__title">This is your modal content</h2>
+                    <h2 id="modal__title">This is your modal content1</h2>
+                    <h3 id="modal__name">this is name</h4>
+                    <p id="modal__url">This is URL</p>
                     <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
                 </div>
             </div>
@@ -54,6 +59,8 @@
                 <div class="modal2__wrap">
                     <label for="modal2__trigger">&#10006;</label>
                     <h2 id="modal2__title">This is your modal content 2</h2>
+                    <h3 id="modal2__name">this is name</h4>
+                    <p id="modal2__url">This is URL</p>
                     <p id="modal2__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
                 </div>
             </div>
@@ -63,7 +70,7 @@
  <label for="modal__trigger">
         <aside class="reward-bar">
                 <h3>Food <br/> <span>$100</span></h3>
-                <div class="progress-bar">
+                <div class="food-bar">
                     <div class="progress-bar__vertical">
                         <div class="progress-bar__inner" style="height: 70%;"></div>
                     </div>
@@ -76,7 +83,7 @@
 <label for="modal2__trigger">
             <aside class="reward-bar">
                 <h3>Clothing <br/> <span>$100</span></h3>
-                <div class="progress-bar">
+                <div class="cloth-bar">
                     <div class="progress-bar__vertical">
                         <div class="progress-bar__inner" style="height: 70%;"></div>
                     </div>
